@@ -20,7 +20,7 @@ function getNextIp()
 	$ip = file_get_contents($fn);
 
 	// if counter.log does not exist
-	if(!file_get_contents) $ip = '192.168.50.90';	
+	if(!$ip) $ip = '192.168.50.90';	
 	
 	$ipex = explode('.', $ip);
 	$ipex[3] += 1;
